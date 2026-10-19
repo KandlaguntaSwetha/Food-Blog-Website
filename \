@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="TasteTrail - Delicious recipes, cooking ideas and food inspiration.">
+
+    <title>TasteTrail | Food Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrap">
+
+        <a href="#home" class="logo">
+            🍴 Taste<span>Trail</span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#newsletter"
+           class="nav-cta">
+            Get Recipes
+        </a>
+
+    </div>
+</header>
+
+<main id="home">
+
+<section class="hero">
+    <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+            <p class="eyebrow">
+                WELCOME TO TASTETRAIL
+            </p>
+
+            <h1>
+                Good food.
+                <br>
+                <em>Great moments.</em>
+            </h1>
+
+            <p class="hero-text">
+                Fresh recipes, simple cooking ideas,
+                and delicious food inspiration for
+                everyday meals and special occasions.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#recipes"
+                   class="btn btn-primary">
+                    Explore Recipes →
+                </a>
+
+                <a href="#about"
+                   class="btn btn-light">
+                    Our Story
+                </a>
+
+            </div>
+
+            <div class="hero-meta">
+
+                <div>
+                    <strong>250+</strong>
+                    <span>Recipes</span>
+                </div>
+
+                <div>
+                    <strong>50K+</strong>
+                    <span>Food Lovers</span>
+                </div>
+
+                <div>
+                    <strong>4.9/5</strong>
+                    <span>Reader Rating</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=85"
+                alt="Healthy colorful food bowl">
+
+            <div class="floating-card">
+
+                <span class="mini-icon">
+                    ⭐
+                </span>
+
+                <div>
+                    <strong>
+                        Editor's Pick
+                    </strong>
+
+                    <small>
+                        Rainbow Nourish Bowl
+                    </small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section"
+         id="recipes">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    FROM OUR KITCHEN
+                </p>
+
+                <h2>
+                    Featured Recipes
+                </h2>
+
+            </div>
+
+            <div class="search-box">
+
+                <span>
+                    🔍
+                </span>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search recipes...">
+
+            </div>
+
+        </div>
+
+        <div class="filter-row"
+             id="filters">
+
+            <button class="filter active"
+                    data-filter="all">
+                All
+            </button>
+
+            <button class="filter"
+                    data-filter="breakfast">
+                Breakfast
+            </button>
+
+            <button class="filter"
+                    data-filter="lunch">
+                Lunch
+            </button>
+
+            <button class="filter"
+                    data-filter="dinner">
+                Dinner
+            </button>
+
+            <button class="filter"
+                    data-filter="dessert">
+                Dessert
+            </button>
+
+        </div>
+
+        <div class="recipe-grid"
+             id="recipeGrid">
+        </div>
+
+        <p class="no-results"
+           id="noResults">
+            No recipes found.
+            Try another search.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="categories section"
+         id="categories">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <p class="eyebrow">
+                EXPLORE
+            </p>
+
+            <h2>
+                Browse by Category
+            </h2>
+
+            <p>
+                Find something delicious for every mood.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <a href="#recipes"
+               class="category-card"
+               data-category-link="breakfast">
+
+                <img
+                    src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=700&q=80"
+                    alt="Breakfast">
+
+                <div>
+
+                    <span>
+                        ☀️
+                    </span>
+
+                    <h3>
+                        Breakfast
+                    </h3>
+
+                    <p>
+                        Start your day right
+                    </p>
+
+                </div>
+
+            </a>
+
+            <a href="#recipes"
+               class="category-card"
+               data-category-link="lunch">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                    alt="Lunch">
+
+                <div>
+
+                    <span>
+                        🥗
+                    </span>
+
+                    <h3>
+                        Lunch
+                    </h3>
+
+                    <p>
+                        Fresh & filling
+                    </p>
+
+                </div>
+
+            </a>
+
+            <a href="#recipes"
+               class="category-card"
+               data-category-link="dinner">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=700&q=80"
+                    alt="Dinner">
+
+                <div>
+
+                    <span>
+                        🍝
+                    </span>
+
+                    <h3>
+                        Dinner
+                    </h3>
+
+                    <p>
+                        Comfort food classics
+                    </p>
+
+                </div>
+
+            </a>
+
+            <a href="#recipes"
+               class="category-card"
+               data-category-link="dessert">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
+                    alt="Dessert">
+
+                <div>
+
+                    <span>
+                        🍰
+                    </span>
+
+                    <h3>
+                        Dessert
+                    </h3>
+
+                    <p>
+                        Sweet treats
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="story section"
+         id="about">
+
+    <div class="container story-grid">
+
+        <div class="story-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=85"
+                alt="Chef preparing food in kitchen">
+
+        </div>
+
+        <div class="story-copy">
+
+            <p class="eyebrow">
+                OUR STORY
+            </p>
+
+            <h2>
+                Cooking should feel joyful,
+                not complicated.
+            </h2>
+
+            <p>
+                TasteTrail began with one simple idea:
+                great home cooking doesn't need complicated
+                ingredients or restaurant-level equipment.
+            </p>
+
+            <p>
+                We create recipes that are approachable,
+                flavorful, and tested for real kitchens.
+                Whether you're cooking for yourself,
+                your family, or a room full of friends,
+                we've got something for you.
+            </p>
+
+            <a href="#contact"
+               class="text-link">
+                Meet the TasteTrail team →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="newsletter"
+         id="newsletter">
+
+    <div class="container newsletter-inner">
+
+        <div>
+
+            <p class="eyebrow">
+                WEEKLY INSPIRATION
+            </p>
+
+            <h2>
+                Recipes in your inbox.
+            </h2>
+
+            <p>
+                One delicious email every Sunday.
+                No spam, ever.
+            </p>
+
+        </div>
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                id="emailInput"
+                placeholder="Your email address"
+                required>
+
+            <button
+                type="submit"
+                class="btn btn-primary">
+                Subscribe
+            </button>
+
+        </form>
+
+        <p class="form-message"
+           id="formMessage">
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer id="contact">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="#home"
+               class="logo">
+                🍴 Taste<span>Trail</span>
+            </a>
+
+            <p>
+                Simple recipes.
+                Big flavors.
+                Happy kitchens.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="#recipes">
+                Recipes
+            </a>
+
+            <a href="#categories">
+                Categories
+            </a>
+
+            <a href="#about">
+                About Us
+            </a>
+
+        </div>
+
+        <div>
+
+            <h4>
+                Follow
+            </h4>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Pinterest
+            </a>
+
+            <a href="#">
+                YouTube
+            </a>
+
+        </div>
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                hello@tastetrail.example
+            </p>
+
+            <p>
+                Made with ❤️ for food lovers.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 TasteTrail.
+        All rights reserved.
+    </div>
+
+</footer>
+
+<div class="modal"
+     id="recipeModal"
+     aria-hidden="true">
+
+    <div class="modal-card">
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            aria-label="Close">
+            ×
+        </button>
+
+        <img
+            id="modalImage"
+            src=""
+            alt="">
+
+        <div class="modal-body">
+
+            <span
+                class="tag"
+                id="modalCategory">
+            </span>
+
+            <h2 id="modalTitle">
+            </h2>
+
+            <p id="modalDescription">
+            </p>
+
+            <div class="recipe-info">
+
+                <span>
+                    ⏱
+                    <b id="modalTime"></b>
+                </span>
+
+                <span>
+                    ⭐
+                    <b id="modalRating"></b>
+                </span>
+
+                <span>
+                    👤
+                    <b id="modalServings"></b>
+                </span>
+
+            </div>
+
+            <h3>
+                Ingredients
+            </h3>
+
+            <ul id="modalIngredients">
+            </ul>
+
+            <h3>
+                Method
+            </h3>
+
+            <ol id="modalMethod">
+            </ol>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
